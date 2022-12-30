@@ -1,0 +1,55 @@
+.nav-toggle-btn {
+    background: none;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+
+    @media (max-width: 500px) {
+        display: block;
+
+    }
+
+    
+    
+}
+
+
+
+.lock {
+    @media (max-width: 500px) {
+        overflow: hidden;
+
+    }
+}
+
+
+.nav-toggle-icon {
+    width: 30px;
+    height: 2px;
+    background-color: $black;
+    transition: 0.25s ease;
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 7px;
+    }
+}
+
+
+
+.nav-toggle-btn.active .icon-1 { 
+    transform: rotate(45deg) translate(8px, 8px); 
+}
+
+
+
+.nav-toggle-btn.active .icon-2 {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.nav-toggle-btn.active .icon-3 {
+    transform: rotate(-45deg) translate(4px, -4px);
+}

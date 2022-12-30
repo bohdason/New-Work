@@ -1,0 +1,57 @@
+
+
+// .main {
+//     flex: 1 1 auto;
+// }
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 793px;
+    background: rgba(217, 219, 228, 0.987) url(../img/background.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
+.intro__inner {
+    max-width: 509px;
+}
+
+.intro__title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    color: $black;
+
+    @media (max-width: 500px) {
+        font-size: 35px;
+        line-height: 40px;
+
+        }
+}
+
+.intro__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 35px;
+    margin-bottom: 0;
+    
+}
+
+.intro__buttons{
+margin-top: 35px;
+
+@media (max-width: 415px) {
+    align-items: center;
+
+    }
+}
+
+
+
+
+

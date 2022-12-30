@@ -1,0 +1,58 @@
+@import "_vars";
+
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #737373;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal ;
+  background-color: #FAFAFA;
+
+
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import "blocks/_header";
+@import "blocks/_container";
+@import "blocks/_intro";
+@import "blocks/_card";
+@import "blocks/_btn";
+@import "blocks/_features";
+@import "blocks/_advice";
+@import "blocks/_about";
+@import "blocks/_our__title";
+@import "blocks/_clients";
+@import "blocks/_form";
+@import "blocks/_form";
+@import "blocks/_contact";
+@import "blocks/_contact-us";
+@import "blocks/_footer";
+@import "blocks/_social";
+@import "blocks/_nav_toggle";
+

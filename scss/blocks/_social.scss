@@ -1,0 +1,45 @@
+.social {
+   
+    margin: 25px 0px 0px 0px;
+    padding-bottom: 25px;
+}
+
+
+
+.social__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 780px) {
+        justify-content: center;
+        text-align: center;
+
+        }
+}
+
+.social__block {
+    @media (max-width: 780px) {
+        margin-top: 25px;
+
+        }
+
+}
+
+.social__icon {
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.social__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    flex: 0 1 50%;
+
+    @media (max-width: 780px) {
+        flex: 0 1 100%;
+
+        }
+}

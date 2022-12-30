@@ -1,0 +1,143 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+
+    &.active {
+        position: fixed;
+        background-color: $white;
+        box-shadow: 0 0 20px hsla(216, 14%, 14%, 0.05);
+        animation: slideIn 0.5s ease forwards;
+    }
+    
+    &.active .header__inner {
+        min-height: 85px;
+    }
+}
+
+.header__inner {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+
+    @media (max-width: 500px) {
+        justify-content: space-between;
+
+    }
+
+}
+
+
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+    z-index: 10;
+    position: relative;
+}
+
+.nav {
+    margin: 0px 0px 0px 133px;
+
+    @media (max-width: 500px) {
+
+        position: relative;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        z-index: 10;
+        padding-top: 100px;
+        margin: 0 auto;
+
+    }
+
+}
+
+.nav__wrapper {
+    @media (max-width: 500px) {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        z-index: 2;
+        padding: 15px 24px 50px 24px;
+        transition: top 0.3s ease-in 0.1s;
+        overflow: hidden;
+        margin: auto;
+
+    }
+
+    &.active {
+        top: 0;
+    }
+
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    color: $black;
+
+    
+
+    &:not(:last-child) {
+        margin-right: 21px;
+    }
+
+    @media (max-width: 500px) {
+        &:not(:last-child) {
+            margin: 0 auto;
+        }
+
+        text-decoration: underline;
+        color: $black;
+        font-size: 24px;
+
+    }
+
+
+
+
+    &:after {
+
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: $black;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width  .2s linear ;
+        position: absolute;
+        
+        }
+
+&:hover {
+     
+
+    &:after {
+   width: 100%;
+   @media (max-width: 500px) {
+    width: 0;
+    }
+    
+}
+   }
+
+}

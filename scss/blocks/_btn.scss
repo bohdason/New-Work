@@ -1,0 +1,41 @@
+.intro__buttton {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 36px;
+    border-radius: 37px;
+   
+    font-family: inherit;
+    line-height: 28px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: $white;
+    background:  #FF7B47;;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .2s linear,color .2s linear;
+
+    @media (max-width: 415px) {
+        margin-bottom: 15px;
+
+        }
+
+        &:hover {
+            background: #0D5C63;
+           
+            
+            
+        }
+
+}
+
+.intro__buttton_border {
+    color: #0D5C63;
+    background: none;
+    border: 1px solid #0D5C63;
+
+    &:hover {
+        background-color:#FF7B47;
+        border: 1px solid #FF7B47;
+    }
+
+}

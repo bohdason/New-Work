@@ -90,7 +90,7 @@ header.active .header__inner {
     position: fixed;
     top: -100%;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-color: #fff;
     z-index: 2;
@@ -1032,4 +1032,20 @@ header.active .header__inner {
 
 .nav-toggle-btn.active .icon-3 {
   transform: rotate(-45deg) translate(4px, -4px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #252B42;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+.overlay.active {
+  pointer-events: all;
+  opacity: 0.8;
 }

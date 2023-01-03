@@ -4,11 +4,13 @@ function results() {
 
     const nav = document.querySelector(".nav__wrapper");
     const navToggle = document.querySelector(".nav-toggle-btn");
+    const dataOverlay = document.querySelector(".overlay");
     
     navToggle.addEventListener("click", function () {
 
         nav.classList.toggle("active");
         navToggle.classList.toggle("active");
+        dataOverlay.classList.toggle("active");
         document.body.classList.toggle("lock");
 
     });
@@ -19,10 +21,21 @@ function results() {
           if (navToggle.classList.contains("active")) {
               document.body.classList.remove("lock");
               navToggle.classList.remove("active");
+              dataOverlay.classList.remove("active");
               nav.classList.remove("active");
           }
         }
     );
+  });
+
+
+  dataOverlay.addEventListener("click", function() {
+    if (navToggle.classList.contains("active")) {
+      document.body.classList.remove("lock");
+      navToggle.classList.remove("active");
+      dataOverlay.classList.remove("active");
+      nav.classList.remove("active");
+  }
   });
   
 };

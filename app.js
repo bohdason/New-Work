@@ -38,10 +38,6 @@ function results() {
   }
   });
 
-
-
-
-  
 };
 results();
 

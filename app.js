@@ -37,6 +37,10 @@ function results() {
       nav.classList.remove("active");
   }
   });
+
+
+
+
   
 };
 results();

@@ -11,7 +11,7 @@ header {
         box-shadow: 0 0 20px hsla(216, 14%, 14%, 0.05);
         animation: slideIn 0.5s ease forwards;
     }
-    
+
     &.active .header__inner {
         min-height: 85px;
     }
@@ -38,7 +38,6 @@ header {
     font-size: 24px;
     line-height: 32px;
     color: $black;
-    z-index: 10;
     position: relative;
 }
 
@@ -54,9 +53,9 @@ header {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 50%;
-        z-index: 10;
-        padding-top: 100px;
+        height: 40%;
+
+        padding-top: 50px;
         margin: 0 auto;
 
     }
@@ -93,16 +92,21 @@ header {
     position: relative;
     color: $black;
 
-    
+
 
     &:not(:last-child) {
         margin-right: 21px;
     }
 
     @media (max-width: 500px) {
+
+        margin: 0;
+
         &:not(:last-child) {
-            margin: 0 auto;
+            margin-right: 0;
         }
+
+
 
         text-decoration: underline;
         color: $black;
@@ -123,21 +127,22 @@ header {
         left: 0;
         z-index: 1;
 
-        transition: width  .2s linear ;
+        transition: width .2s linear;
         position: absolute;
-        
-        }
 
-&:hover {
-     
-
-    &:after {
-   width: 100%;
-   @media (max-width: 500px) {
-    width: 0;
     }
-    
-}
-   }
+
+    &:hover {
+
+
+        &:after {
+            width: 100%;
+
+            @media (max-width: 500px) {
+                width: 0;
+            }
+
+        }
+    }
 
 }

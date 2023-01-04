@@ -5,11 +5,12 @@ function results() {
     const nav = document.querySelector(".nav__wrapper");
     const navToggle = document.querySelector(".nav-toggle-btn");
     const dataOverlay = document.querySelector(".overlay");
+    const closeElem = document.querySelector('.menu__close');
     
     navToggle.addEventListener("click", function () {
 
         nav.classList.toggle("active");
-        navToggle.classList.toggle("active");
+        this.classList.toggle("active");
         dataOverlay.classList.toggle("active");
         document.body.classList.toggle("lock");
 
@@ -37,6 +38,18 @@ function results() {
       nav.classList.remove("active");
   }
   });
+
+  closeElem.addEventListener("click", function() {
+    if (navToggle.classList.contains("active")) {
+      document.body.classList.remove("lock");
+      navToggle.classList.remove("active");
+      dataOverlay.classList.remove("active");
+      nav.classList.remove("active");
+  }
+  });
+
+
+
 
 };
 results();

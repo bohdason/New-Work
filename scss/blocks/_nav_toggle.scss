@@ -39,20 +39,20 @@
 
 
 
-.nav-toggle-btn.active .icon-1 {
-    transform: rotate(45deg) translate(8px, 8px);
-}
+// .nav-toggle-btn.active .icon-1 {
+//     transform: rotate(45deg) translate(8px, 8px);
+// }
 
 
 
-.nav-toggle-btn.active .icon-2 {
-    opacity: 0;
-    transform: translateX(-10px);
-}
+// .nav-toggle-btn.active .icon-2 {
+//     opacity: 0;
+//     transform: translateX(-10px);
+// }
 
-.nav-toggle-btn.active .icon-3 {
-    transform: rotate(-45deg) translate(4px, -4px);
-}
+// .nav-toggle-btn.active .icon-3 {
+//     transform: rotate(-45deg) translate(4px, -4px);
+// }
 
 
 .overlay {
@@ -72,4 +72,19 @@
     }
 
 
+}
+
+
+/*nav_close*/
+
+.nav__top{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+
+    @media (max-width: 500px) {
+        display: flex;
+
+    }
 }

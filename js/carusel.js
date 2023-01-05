@@ -1,6 +1,7 @@
-new Swiper('.swiper', {
+new Swiper(".swiper", {
+    
 
-    pagination: {
+      pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
@@ -25,4 +26,5 @@ new Swiper('.swiper', {
           slidesPerView: 3,
         }
       },
-});
+    
+  });

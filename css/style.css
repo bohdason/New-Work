@@ -338,12 +338,6 @@ header.active .header__inner {
   margin-top: 10px;
 }
 
-.advantages {
-  display: flex;
-  margin: 0 -15px;
-  flex-wrap: wrap;
-}
-
 .black {
   height: 300px;
 }
@@ -399,8 +393,20 @@ header.active .header__inner {
   letter-spacing: 0.1px;
 }
 
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 50px;
+}
+
 .advice {
-  margin-top: 175px;
+  margin-top: 100px;
 }
 
 .advise__item {
@@ -430,6 +436,11 @@ header.active .header__inner {
   max-width: 100%;
   height: auto;
   width: -webkit-fill-available;
+}
+
+.advice__block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about {

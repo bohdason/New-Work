@@ -2,10 +2,10 @@
     margin-top: 205px;
 
     @media (max-width: 460px) {
-      margin-top: 100px;
-      
+       margin-top: 100px;
 
-   }
+
+    }
  }
 
 
@@ -30,11 +30,11 @@
     margin-top: 10px;
  }
 
- .advantages {
-    display: flex;
-    margin: 0 -15px;
-    flex-wrap: wrap;
- }
+ //  .advantages {
+ //     display: flex;
+ //     margin: 0 -15px;
+ //     flex-wrap: wrap;
+ //  }
 
  .black {
     height: 300px;
@@ -54,10 +54,10 @@
     }
 
     @media (max-width: 460px) {
-      width: 100%;
-      
+       width: 100%;
 
-   }
+
+    }
 
 
  }
@@ -100,4 +100,23 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
+ }
+
+
+
+
+ 
+ 
+
+ .swiper-pagination-bullet {
+    
+    width: 15px;
+    height: 15px;
+    line-height: 20px;
+    font-size: 13px;
+ }
+
+ .swiper-pagination {
+   position: relative;
+   margin-top: 50px;
  }

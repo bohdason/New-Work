@@ -461,20 +461,28 @@ header.active .header__inner {
   justify-content: center;
 }
 
+.about__video {
+  flex: 1 0 55%;
+}
+@media (max-width: 750px) {
+  .about__video {
+    flex: 1 0 100%;
+  }
+}
+
 .video {
-  width: 600px;
+  width: 100%;
   height: 442px;
 }
 @media (max-width: 750px) {
   .video {
-    width: 400px;
-    height: 242px;
+    width: 100%;
+    height: 300px;
   }
 }
 @media (max-width: 415px) {
   .video {
-    max-width: 310px;
-    height: 242px;
+    max-width: 100%;
   }
 }
 

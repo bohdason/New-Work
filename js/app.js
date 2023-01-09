@@ -63,12 +63,15 @@ results();
  */
 
 const header = document.querySelector(".header");
+const topBtn = document.querySelector(".back-top-btn");
 
 window.addEventListener("scroll", function(){
   if (window.scrollY > 100) {
     header.classList.add("active");
+    topBtn.classList.add("active");
   } else {
     header.classList.remove("active");
+    topBtn.classList.remove("active");
   }
 });
 

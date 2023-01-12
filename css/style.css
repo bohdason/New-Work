@@ -1049,10 +1049,8 @@ header.active .header__inner {
   }
 }
 
-@media (max-width: 500px) {
-  .lock {
-    overflow: hidden;
-  }
+.lock {
+  overflow: hidden;
 }
 
 .nav-toggle-icon {

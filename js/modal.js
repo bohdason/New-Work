@@ -19,7 +19,11 @@ close.addEventListener("click", function () {
  });
 
  window.addEventListener('click', e =>
-  e.target == modal ? modal.classList.remove('active') : false
+ e.target == modal ? document.body.classList.remove('lock') : false
+);
+
+window.addEventListener('click', e =>
+ e.target == modal ? modal.classList.remove('active') : false
 );
 
  

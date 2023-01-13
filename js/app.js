@@ -1,58 +1,53 @@
 /***JS Nav Toggle*********** */
 
-function results() {
 
-    const nav = document.querySelector(".nav__wrapper");
-    const navToggle = document.querySelector(".nav-toggle-btn");
-    const dataOverlay = document.querySelector(".overlay");
-    const closeElem = document.querySelector('.menu__close');
-    
-    navToggle.addEventListener("click", function () {
 
-        nav.classList.toggle("active");
-        this.classList.toggle("active");
-        dataOverlay.classList.toggle("active");
-        document.body.classList.toggle("lock");
 
-    });
+
+
+
+const addEventOnElements = function (elements, eventType, callback) {
+  for (let i = 0, len = elements.length; i < len; i++) {
+    elements[i].addEventListener(eventType, callback);
+  }
+}
+
+
+
+/**
+ * NAVBAR TOGGLE FOR MOBILE
+ */
+
+const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay]");
+
+const toggleNavbar = function () {
+  navbar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("lock");
+}
+
+addEventOnElements(navTogglers, "click", toggleNavbar);
+
+
+
 
     const navLinks = document.querySelectorAll(".nav__link");
   navLinks.forEach((navLink) => {
     navLink.addEventListener("click", (_) => {
-          if (navToggle.classList.contains("active")) {
+          if (overlay.classList.contains("active")) {
               document.body.classList.remove("lock");
-              navToggle.classList.remove("active");
-              dataOverlay.classList.remove("active");
-              nav.classList.remove("active");
+              overlay.classList.remove("active");
+              navbar.classList.remove("active");
           }
         }
     );
   });
 
 
-  dataOverlay.addEventListener("click", function() {
-    if (navToggle.classList.contains("active")) {
-      document.body.classList.remove("lock");
-      navToggle.classList.remove("active");
-      dataOverlay.classList.remove("active");
-      nav.classList.remove("active");
-  }
-  });
-
-  closeElem.addEventListener("click", function() {
-    if (navToggle.classList.contains("active")) {
-      document.body.classList.remove("lock");
-      navToggle.classList.remove("active");
-      dataOverlay.classList.remove("active");
-      nav.classList.remove("active");
-  }
-  });
 
 
-
-
-};
-results();
 
 
 
@@ -65,7 +60,7 @@ results();
 const header = document.querySelector(".header");
 const topBtn = document.querySelector(".back-top-btn");
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
   if (window.scrollY > 100) {
     header.classList.add("active");
     topBtn.classList.add("active");

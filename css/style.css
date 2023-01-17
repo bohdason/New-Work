@@ -1114,7 +1114,6 @@ header.scroll-up .header__inner {
 }
 
 .modal {
-  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
@@ -1124,7 +1123,7 @@ header.scroll-up .header__inner {
 }
 
 .modal__header {
-  background-color: #30336b;
+  background-color: #17213C;
   color: #fff;
   padding: 15px;
   display: flex;
@@ -1143,6 +1142,7 @@ header.scroll-up .header__inner {
   padding: 20px;
   color: #252B42;
   font-size: 16px;
+  background-color: #fff;
 }
 
 .modal__form .form-input {
@@ -1160,10 +1160,10 @@ header.scroll-up .header__inner {
 }
 
 .submit-btn {
-  background-color: rgb(206, 70, 70);
+  background-color: rgb(231, 52, 52);
   border: 0;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 8px 15px;
 }

@@ -38,16 +38,20 @@ header {
   left: 0;
   width: 100%;
   z-index: 50;
+  transition: transform 0.4s;
 }
-header.active {
+header.scroll-down {
+  transform: translate3d(0, -100%, 0);
+}
+header.scroll-up {
+  transform: none;
   position: fixed;
   background-color: #fff;
   box-shadow: 0 0 20px hsla(216deg, 14%, 14%, 0.05);
-  -webkit-animation: slideIn 0.5s ease forwards;
-          animation: slideIn 0.5s ease forwards;
+  min-height: 80px;
 }
-header.active .header__inner {
-  min-height: 85px;
+header.scroll-up .header__inner {
+  min-height: 80px;
 }
 
 .header__inner {

@@ -44,15 +44,15 @@
                     </div>
                     <nav class=nav>
                         <a class="nav__link" href="#">Home</a>
-                        <a class="nav__link" href="#">Product</a>
-                        <a class="nav__link" href="#">Pricing</a>
-                        <a class="nav__link" href="#">Contact</a>
+                        <a class="nav__link" href="#product">Product</a>
+                        <a class="nav__link" href="#pricing" data-filter="advice" >Pricing</a>
+                        <a class="nav__link" href="#contact">Contact</a>
                     </nav>
 
 
                 </div>
 
-                <button class="nav-toggle-btn"  data-nav-toggler>
+                <button class="nav-toggle-btn" data-nav-toggler>
                     <span class="nav-toggle-icon icon-1"></span>
                     <span class="nav-toggle-icon icon-2"></span>
                     <span class="nav-toggle-icon icon-3"></span>
@@ -132,7 +132,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="product">
             <div class="container">
 
                 <div class="fetures__header">
@@ -204,7 +204,7 @@
 
         </section>
 
-        <section class="advice">
+        <section class="advice" id="advice">
             <div class="container">
                 <div class="fetures__header advice__header">
                     <h1 class="header__title advise__title">Practice Advice</h1>
@@ -300,12 +300,9 @@
                         of Classical physics: Newtonian mechanics </p>
                 </div>
                 <div class="about__block">
-                    <!-- <div class="about__video" data-reveal="left">
-                        <iframe class="video" src="https://www.youtube.com/embed/lzledoZLFBQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen> </iframe>
-                    </div> -->
+                    <div class="about__video" data-reveal="left">
+                        <iframe class="video" src="https://www.youtube.com/embed/CUEJkJ9HDbY?controls=0&amp;start=127" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                     <div class="about__info" data-reveal="right">
                         <h3 class="our__title">Most trusted in
                             our field</h3>
@@ -386,7 +383,7 @@
 
 
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="our__header">
                     <h2 class="our__title">Get In Touch</h2>
@@ -453,13 +450,14 @@
         </section>
 
 
-        <div class="container">
+        <div class="container" id="pricing">
             <div class="contact-us">
                 <div class="contact-us__info">
                     <h3 class="contact-us__title">Consulting Agency For Your Business</h3>
                     <p class="contact-us__text">the quick fox jumps over the lazy dog</p>
                 </div>
-                <button class="subscribe__button contact-us__button" href="" data-reveal="bottom" id="open">Contact Us</button>
+                <button class="subscribe__button contact-us__button" href="" data-reveal="bottom" id="open">Contact
+                    Us</button>
             </div>
         </div>
     </main>
@@ -568,27 +566,25 @@
     <!------------------------- Modal ---------->
     <div class="modal-container" id="modal">
         <div class="modal">
-           
+
             <div class="modal__header">
                 <h3>Give you fide back</h3>
                 <button class="close-btn" id="close">
-                    <svg width="20" height="20" viewBox="0 0 29 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
-                                        fill="white"></path>
-                                </svg>
+                    <svg width="20" height="20" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+                            fill="white"></path>
+                    </svg>
                 </button>
             </div>
             <div class="modal__content">
 
                 <p class="modal__content-text">Add your favorite ideas</p>
-                <form class="modal__form"  action="https://formspree.io/f/mnqyakoe"
-                method="POST">
+                <form class="modal__form" action="https://formspree.io/f/mnqyakoe" method="POST">
 
                     <div class="modal__form-item">
                         <label for="name">Name</label>
-                        <input type="text" id="name"  name="message" placeholder="Enter Name" class="form-input">
+                        <input type="text" id="name" name="message" placeholder="Enter Name" class="form-input">
                     </div>
 
                     <div class="modal__form-item">

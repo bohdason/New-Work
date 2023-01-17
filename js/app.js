@@ -33,17 +33,17 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 
 
 
-    const navLinks = document.querySelectorAll(".nav__link");
-  navLinks.forEach((navLink) => {
-    navLink.addEventListener("click", (_) => {
-          if (overlay.classList.contains("active")) {
-              document.body.classList.remove("lock");
-              overlay.classList.remove("active");
-              navbar.classList.remove("active");
-          }
-        }
-    );
-  });
+const navLinks = document.querySelectorAll(".nav__link");
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", (_) => {
+    if (overlay.classList.contains("active")) {
+      document.body.classList.remove("lock");
+      overlay.classList.remove("active");
+      navbar.classList.remove("active");
+    }
+  }
+  );
+});
 
 
 
@@ -57,15 +57,15 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
  * active header when window scroll down to 100px
  */
 
-const header = document.querySelector(".header");
+
 const topBtn = document.querySelector(".back-top-btn");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100) {
-    header.classList.add("active");
+
     topBtn.classList.add("active");
   } else {
-    header.classList.remove("active");
+
     topBtn.classList.remove("active");
   }
 });
@@ -93,3 +93,46 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+
+// window.onload = function() {
+//   document.querySelector('[data-filter=".advice"]').click();
+// };
+
+
+/**
+ * HEADER
+ * active header when window scroll up
+ */
+const body = document.body;
+const header = document.querySelector(".header");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
+
+
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    header.classList.remove(scrollUp);
+
+    return;
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    // down
+    header.classList.remove(scrollUp);
+    header.classList.add(scrollDown);
+
+  } else if (
+    currentScroll < lastScroll &&
+    header.classList.contains(scrollDown)
+  ) {
+    // up
+    header.classList.remove(scrollDown);
+    header.classList.add(scrollUp);
+
+  }
+  lastScroll = currentScroll;
+});

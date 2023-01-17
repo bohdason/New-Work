@@ -4,18 +4,43 @@ header {
     left: 0;
     width: 100%;
     z-index: 50;
+    transition: transform 0.4s;
 
-    &.active {
+    // &.active {
+    //     position: fixed;
+    //     background-color: $white;
+    //     box-shadow: 0 0 20px hsla(216, 14%, 14%, 0.05);
+    //     animation: slideIn 0.5s ease forwards;
+    // }
+
+    // &.active .header__inner {
+    //     min-height: 85px;
+    // }
+
+    &.scroll-down {
+        transform: translate3d(0, -100%, 0);
+        
+    }
+
+    &.scroll-up {
+        transform: none;
         position: fixed;
         background-color: $white;
         box-shadow: 0 0 20px hsla(216, 14%, 14%, 0.05);
-        animation: slideIn 0.5s ease forwards;
+        
+        min-height: 80px;
     }
 
-    &.active .header__inner {
-        min-height: 85px;
-    }
+    &.scroll-up .header__inner {
+             min-height: 80px;
+         }
+
+
+
 }
+
+
+
 
 .header__inner {
     display: flex;

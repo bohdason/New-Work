@@ -125,7 +125,6 @@ header.scroll-up .header__inner {
 @media (max-width: 500px) {
   .nav__link {
     margin: 0;
-    text-decoration: underline;
     color: #252B42;
     font-size: 24px;
   }

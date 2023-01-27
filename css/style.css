@@ -1167,12 +1167,15 @@ header.scroll-up .header__inner {
   padding: 8px 15px;
 }
 
+.curencies__calculator {
+  margin-top: 100px;
+}
+
 .wrapper__calculator {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
 }
 
 .currency {
@@ -1181,7 +1184,6 @@ header.scroll-up .header__inner {
   align-items: center;
   padding: 40px 0;
   flex: 0 auto;
-  width: 100%;
 }
 .currency select {
   padding: 7px 15px;
@@ -1194,11 +1196,10 @@ header.scroll-up .header__inner {
   padding: 7px 15px;
   font-size: 20px;
   font-weight: 600;
-  border: none;
   text-align: right;
   border: 1px solid #8e8686;
   flex: 1 1 auto;
-  max-width: 500px;
+  width: 50%;
 }
 
 .rate {

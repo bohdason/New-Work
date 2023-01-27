@@ -1,0 +1,51 @@
+.wrapper__calculator {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+
+
+.currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex: 0 auto;
+    width: 100%;
+
+    select {
+        padding: 7px 15px;
+        font-size: 20px;
+        font-weight: 600;
+        border: 1px solid #8e8686;
+        margin-right: 15px;
+        
+    }
+
+    input {
+        padding: 7px 15px;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        text-align: right;
+        border: 1px solid #8e8686;
+        flex: 1 1 auto;
+       max-width: 500px;
+
+        
+    }
+}
+
+
+
+.rate {
+    font-size: 20px;
+    font-weight: 600;
+    color: $black;
+    text-align: center;
+    color: $black;
+}

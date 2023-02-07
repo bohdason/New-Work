@@ -160,6 +160,13 @@ header.scroll-up .header__inner {
   margin: 0 auto;
 }
 
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -921,6 +928,10 @@ header.scroll-up .header__inner {
   background-color: #17213C;
   color: #fff;
   transition: 0.6s ease;
+}
+
+.footer {
+  margin-top: auto;
 }
 
 .footer__block_all {

@@ -39,6 +39,11 @@
         color: $white;
     }
 
+    &:hover * {
+        color: $white;
+      }
+      
+
 }
 
 // .green {
@@ -55,11 +60,6 @@
     font-size: $card_title;
     line-height: 32px;
     color: $black;
-
-    &:hover {
-
-        color: $white;
-    }
 }
 
 .card__col_text {

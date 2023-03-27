@@ -47,7 +47,7 @@ header.scroll-up {
   transform: none;
   position: fixed;
   background-color: #fff;
-  box-shadow: 0 0 20px hsla(216deg, 14%, 14%, 0.05);
+  box-shadow: 0 0 20px hsla(216, 14%, 14%, 0.05);
   min-height: 80px;
 }
 header.scroll-up .header__inner {
@@ -247,6 +247,9 @@ header.scroll-up .header__inner {
   background-color: #0D5C63;
   color: #fff;
 }
+.card__col_only:hover * {
+  color: #fff;
+}
 
 .card__col_content {
   margin-top: 10px;
@@ -257,9 +260,6 @@ header.scroll-up .header__inner {
   font-size: 24px;
   line-height: 32px;
   color: #252B42;
-}
-.card__col_title:hover {
-  color: #fff;
 }
 
 .card__col_text {
@@ -328,7 +328,7 @@ header.scroll-up .header__inner {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: hsl(38deg, 61%, 73%);
+  background-color: hsl(38, 61%, 73%);
   color: #252B42;
   font-size: 22px;
   width: 50px;
@@ -336,7 +336,7 @@ header.scroll-up .header__inner {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  box-shadow: 0px 0px 25px 0px hsla(0deg, 0%, 0%, 0.25);
+  box-shadow: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
   transition: 250ms ease;
   opacity: 0;
   visibility: hidden;

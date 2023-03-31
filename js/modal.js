@@ -32,56 +32,37 @@
 // modals();
 
 
-function addClass(element, className) {
-   element.classList.add(className);
- }
- 
- function removeClass(element, className) {
-   element.classList.remove(className);
- }
- 
- function showModal() {
-   const modal = document.querySelector(MODAL_SELECTOR);
-   const body = document.body;
- 
-   addClass(modal, 'active');
-   addClass(body, 'lock');
- }
- 
- function hideModal() {
-   const modal = document.querySelector(MODAL_SELECTOR);
-   const body = document.body;
- 
-   removeClass(modal, 'active');
-   removeClass(body, 'lock');
- }
- 
- function handleModalClick(e) {
-   if (e.target.matches(MODAL_SELECTOR) || e.target.matches(CLOSE_SELECTOR)) {
-     hideModal();
-   }
- }
- 
- function initModal() {
-   const openBtn = document.querySelector(OPEN_SELECTOR);
-   const closeBtn = document.querySelector(CLOSE_SELECTOR);
-   const modal = document.querySelector(MODAL_SELECTOR);
- 
-   if (openBtn && closeBtn && modal) {
-     openBtn.addEventListener('click', showModal);
-     closeBtn.addEventListener('click', hideModal);
-     modal.addEventListener('click', handleModalClick);
-   }
- }
- 
- // Константы для идентификации элементов
- const OPEN_SELECTOR = '#open';
- const CLOSE_SELECTOR = '#close';
- const MODAL_SELECTOR = '#modal';
- 
- initModal();
- 
- 
+function modals() {
+  const modal = document.getElementById('modal');
+  const body = document.body;
+  const openBtn = document.getElementById('open');
+  const closeBtn = document.getElementById('close');
+
+  
+  function openModal() {
+    modal.classList.add("active");
+    body.classList.add("lock");
+  }
+  function closeModal() {
+    modal.classList.remove("active");
+    body.classList.remove("lock");
+  }
+  body.addEventListener('click', function (event) {
+    const target = event.target;
+
+    if (target === openBtn) {
+      openModal();
+    }
+    if (target === closeBtn || target === modal) {
+      closeModal();
+    }
+  });
+}
+
+modals();
+
+
+
  
 
 

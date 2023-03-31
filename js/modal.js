@@ -57,6 +57,11 @@ function modals() {
       closeModal();
     }
   });
+  document.querySelectorAll('.close-btn').forEach(function(element) {
+    element.addEventListener('click', function() {
+      closeModal();
+    });
+  });
 }
 
 modals();
